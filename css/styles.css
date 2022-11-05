@@ -49,6 +49,10 @@ body {
   color: var(--primary-text-color);
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -63,11 +67,25 @@ body {
 
 /* Header */
 
-.page-header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+.page-header {  
   background-color: var(--heder-bg-color);
 }
+
+.header-container {
+display: flex;
+align-items: center;
+}
+
+.nav-site {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 93px;
+  padding-top: 25px;
+    padding-bottom: 25px;
+ }
 
 .logo,
 .logo-footer {
@@ -83,17 +101,25 @@ body {
 }
 
 .logo-text {
+  margin: 0;
   color: var(--logo-text-color);
 }
 
 /* Site-nav */
 
+.site-nav {
+  display: flex;
+  gap: 50px;
+  }
+
 .site-nav .link {
-  color: var(--title-text-color);
+    color: var(--title-text-color);
 }
 
 .site-nav .link,
 .contacts .contact {
+  padding-top: 32px;
+    padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1429;
@@ -112,6 +138,12 @@ body {
 
 /* Contacts */
 
+.contacts {
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
+
 .contacts .contact {
   color: var(--primary-text-color);
 }
@@ -124,18 +156,20 @@ body {
 /* Hero */
 
 .hero {
-    margin-bottom: 94px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
   background-color: var(--bg-hero-color);
 }
 
 .hero-title {
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3636;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--title-hero-color);
@@ -144,7 +178,8 @@ body {
 /* Button */
 
 .hero-button {
-  font-family: inherit;
+  min-width: 216px;
+    font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -163,7 +198,7 @@ body {
 /* Section */
 
 .section-title {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.1667;
   text-align: center;
@@ -172,25 +207,31 @@ body {
 
 /* Features */
 
- .visually-hidden {
-     position: absolute;
-     width: 1px;
-     height: 1px;
-     margin: -1px;
-     border: 0;
-     padding: 0;
-     white-space: nowrap;
-     clip-path: inset(100%);
-     clip: rect(0 0 0 0);
-     overflow: hidden;
- }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-.feature {    
-    margin-bottom: 94px;
+.feature-list {
+display: flex;
+gap: 30px;
+}
+
+.feature {
+  padding-top: 94px;
+  padding-bottom: 94px;  
 }
 
 .feature-list .title {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.1429;
   color: var(--title-text-color);
@@ -204,15 +245,25 @@ body {
 /* Work */
 
 .work {
-    margin-bottom: 94px;
+  padding-bottom: 94px;
+}
+
+.work .list {
+  display: flex;
+  gap: 30px;
 }
 
 /* Our team */
 
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-bottom: 94px;
   background-color: var(--additional-bg-color);
+}
+
+.team-list {
+  display: flex;
+  padding-bottom: 30px;
+  gap: 30px;
 }
 
 .team-item {
@@ -220,11 +271,12 @@ body {
 }
 
 .team-images {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .team-list .title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
@@ -232,6 +284,7 @@ body {
 }
 
 .team-list .text {
+  text-align: center;
   font-size: 16px;
   line-height: 1.1875;
 }
@@ -239,9 +292,14 @@ body {
 /* Footer */
 
 .page-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bg-footer-color);
+}
+
+.logo-footer {
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .logo-footer-color {
@@ -250,6 +308,10 @@ body {
 
 .logo-footer-text {
   color: var(--logo-footer-text-color);
+}
+
+.address-item {
+  margin-bottom: 9px;
 }
 
 .address-footer,
@@ -276,6 +338,11 @@ body {
 }
 
 /* Портфоліо */
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .portfolio-nav .button {
   font-family: inherit;
