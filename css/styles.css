@@ -253,10 +253,6 @@ img {
 
 /* Work */
 
-.work {
-  padding-bottom: 94px;
-}
-
 .work .list {
   display: flex;
   gap: 30px;
@@ -269,6 +265,7 @@ img {
 /* Our team */
 
 .team {
+  padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--additional-bg-color);
 }
@@ -283,11 +280,8 @@ img {
   background-color: var(--team-item-bg-color);
 }
 
-.team-images {
-  margin-bottom: 20px;
-}
-
 .team-card {
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 
@@ -400,22 +394,25 @@ img {
 }
 
 .portfolio-card {
+  padding-top: 20px;
+  padding-right: 24px;
 padding-bottom: 20px;
-border: 1px solid var(--border-portfolio-color);
+padding-left: 24px;
+border-right: 1px solid var(--border-portfolio-color);
+border-bottom: 1px solid var(--border-portfolio-color);
+border-left: 1px solid var(--border-portfolio-color);
 }
 
 .portfolio-list .title {
   margin-bottom: 4px;
-  padding-left: 24px;
-  font-size: 18px;
+    font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 
 .portfolio-list .text {
-  padding-left: 24px;
-  font-size: 16px;
+    font-size: 16px;
   line-height: 1.875;
   color: var(--primary-text-color);
 }
